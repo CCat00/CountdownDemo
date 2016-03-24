@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34v-xT-yYt">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQh-ka-kln">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfH-NM-xA4" customClass="CountdownLabel">
+                                                <rect key="frame" x="279" y="200" width="42" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="zfH-NM-xA4" firstAttribute="top" secondItem="UQh-ka-kln" secondAttribute="top" constant="200" id="5Kh-tS-b5h"/>
+                                            <constraint firstItem="zfH-NM-xA4" firstAttribute="centerX" secondItem="UQh-ka-kln" secondAttribute="centerX" id="Qrb-dg-gJS"/>
+                                            <constraint firstAttribute="height" constant="1000" id="Qt3-rR-nRL"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UQh-ka-kln" secondAttribute="trailing" id="5AM-fv-q30"/>
+                                    <constraint firstItem="UQh-ka-kln" firstAttribute="top" secondItem="34v-xT-yYt" secondAttribute="top" id="ceo-C9-Ue9"/>
+                                    <constraint firstItem="UQh-ka-kln" firstAttribute="leading" secondItem="34v-xT-yYt" secondAttribute="leading" id="omu-Tx-qeV"/>
+                                    <constraint firstAttribute="bottom" secondItem="UQh-ka-kln" secondAttribute="bottom" id="rHd-bR-rAd"/>
+                                    <constraint firstItem="UQh-ka-kln" firstAttribute="centerX" secondItem="34v-xT-yYt" secondAttribute="centerX" id="rIj-gU-MsV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="34v-xT-yYt" secondAttribute="bottom" id="BRV-bu-cLI"/>
+                            <constraint firstItem="34v-xT-yYt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Q7G-lX-3sq"/>
+                            <constraint firstItem="34v-xT-yYt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QIh-zW-WTN"/>
+                            <constraint firstAttribute="trailing" secondItem="34v-xT-yYt" secondAttribute="trailing" id="jpR-KR-Vu6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="zfH-NM-xA4" id="QAd-9E-mc4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
